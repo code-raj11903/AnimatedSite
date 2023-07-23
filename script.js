@@ -39,8 +39,8 @@ gsap.to("nav",{
         trigger:"nav",
         scroller:"body",
         // markers:true,
-       start:"top -10.4%",
-       end:"top -12%",
+       start:"top -11%",
+       end:"top -14%",
        scrub: 1,
     }
 })
