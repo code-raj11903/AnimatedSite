@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Ubuntu&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  color: #fff;
+
+}
+html ,body {
+    width: 100%;
+    height: 100%;
+  
+}
+body{
+        font-family: 'Montserrat', sans-serif;
+       
+        
+}
+*::selection {
+  background-color: #fff;
+  color: #7c7878;
+}
+
+nav{
+
+height: 100px;
+width: 100%;
+display: flex;
+text-transform: uppercase;
+font-family: 'Ubuntu', sans-serif;
+justify-content: flex-start;
+padding: 0 30px;
+align-items: center;
+z-index:11;
+position: fixed;
+top: 0;
+
+}
+nav img{
+    width: 40px;
+    margin-right: 10px;
+
+
+}
+nav ul{
+    display: flex;
+}
+
+nav ul li {
+    list-style-type: none;
+    padding: 10px;
+}
+
+#cursor{
+    width: 20px;
+    height: 20px;
+    background-color: rgba(213, 120, 120, 0.263);
+    border-radius: 50%;
+    z-index: 10;
+    transition: all linear 0.05s;
+position: fixed;
+}
+#cursor-blur{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(97, 80, 80, 0.331);
+    border-radius: 50%;
+filter: blur(50px);
+position: fixed;
+z-index: 9;
+transition: all linear 0.1s;
+}
+
+video{
+  
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+  position: fixed;
+
+}
+
+.content
+{ position: relative;
+ 
+    background-color: rgba(8, 7, 7, 0.22);
+}
+
+.section1{
+position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+    z-index: 10;
+}
+.section1 h1{
+    position: relative;
+    text-transform: uppercase;
+    font-size: 7.5vw;
+    color: rgb(255, 255, 255);
+   
+}
+.section1 h1::before{
+    position: absolute;
+   content: " code.eat.sleep";
+   color:  rgb(76, 77, 72);
+   top: -3px;
+   left: -4px;
+   z-index: -1;  
+}
+
+
+
+.section1 pre{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-top: 10px;
+  margin-bottom: 20px;
+    background-color: rgb(134, 132, 132); 
+    font-weight: 700;   
+}
+.section1 p{
+    
+  font-size: 1.2vw;
+  font-weight: 500;
+  width: 40%;
+    
+}
+
+.section2{
+  min-height: 100vh;
+  width: 100%;
+  z-index: 10;
+}
+
+.scroll {
+    /* background-color: red; */
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 10;
+    text-transform: uppercase;
+  }
+  .scroll::-webkit-scrollbar {
+    display: none;
+  }
+  .scroll-1 {
+    display: inline-block;
+    white-space: nowrap;
+    animation-name: scroll;
+    animation-duration: 20s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+  }
+  
+  .scroll h4 {
+    display: inline-block;
+    font-size: 120px;
+    font-weight: 900;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    margin-right: 30px;
+    transition: all linear 0.1s;
+    color: #000;
+    -webkit-text-stroke: 0.5px #ffffff;
+  }
+  .scroll h4:hover {
+    color: #ffffff;
+
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(5%);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+
+  .aboutus{
+    height: 40vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+margin: 100px 0px;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    justify-content: space-around;
+    
+  }
+  .aboutus img{
+    height: 220px;
+    width: 220px;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+  .aboutcontent{
+    width: 50%;
+    text-align: center;
+  }
+  .aboutcontent h2{
+  
+    text-transform: uppercase;
+    font-size: 54px;
+  font-weight: 800;
+  margin-bottom: 30px;
+  }
+.aboutcontent p{
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.cardcontainer{
+  /* background-color: red; */
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 70px;
+  position: relative;
+  z-index: 10;
+
+}
+.cards
+{   
+  height: 80%;
+  width: 24%;
+  /* background-color: blue; */
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+  overflow: hidden;
+  transition: all ease 0.6s;
+}
+
+#card2{
+    background-image: url(https://img.freepik.com/free-vector/programming-concept-illustration_114360-1351.jpg?w=740&t=st=1690105623~exp=1690106223~hmac=5b47a7056a1d25a49ad0a20599f1df2a3bbdcbd534878f0120873aa17fd502e0);
+ 
+}
+#card3{
+    background-image: url(./Elements/3.jpg);  
+ 
+}
+#card1{
+    background-image: url(./Elements/2.jpg);
+ }
+
+ .overlay{
+  height: 100%;
+  width: 100%;
+  background-color: #f5f7f1;
+  padding: 20px;
+  padding-top: 90px;
+  opacity: 0;
+  transition: all ease 0.6s;
+ }
+ 
+ .overlay h4{
+  color: #000;
+  font-size: 40px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  font-weight: 800;
+  
+ }
+ .overlay p{
+  color: #000;
+  font-size: 18px;
+  width: 80%;
+
+
+ }
+ .cards:hover .overlay {
+  opacity: 1;
+}
+.cards:hover {
+  transform: rotate3d(-1, 1, 0, 20deg);
+}
+
+
+.bar{
+  background-color: rgb(52, 49, 49);
+  display: flex;
+  /* width: 100%; */
+  height: 30vh;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+}
+.ele{
+  width: 220px;
+height: 220px;
+}
+.positon{
+  position: absolute;
+  top:-20px;
+  left: 5px;
+  z-index: -1;
+  transform: rotate(90deg);
+}
+
+
+.section3{
+  width: 100%;
+    height: 100vh;
+
+    background-color: #000;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9;
+}
+.section3>p{
+  font-size: 30px;
+  width: 55%;
+  line-height: 45px;
+  text-align: center;
+  color: #7c7878;
+
+}
+.section3 img{
+position: absolute;
+height: 60px;
+}
+
+#colon1{
+  top: 25%;
+  left:15%;
+}
+#colon2{
+  bottom: 30%;
+right:15%;
+transform: rotate(180deg);
+}
+.connect{
+  width: 100%;
+  display: flex;
+  height: 60vh;
+  align-items: center;
+  justify-content: center;
+flex-direction: column;
+position: relative;
+z-index: 10;
+background-color: rgb(9, 9, 9);
+}
+.connect h4 {
+ font-size: 4.5vw;
+ margin-bottom: 30px ;
+}
+.connect img{
+  width: 100px;
+  margin: 30px;
+
+}
+.connect img:hover{
+ scale: 1.5;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 60vh;
+  padding: 3% 15%;
+  background-color: rgb(70, 70, 70);
+  position: relative;
+  z-index: 10;
+}
+
+.links  div {
+height: 80%;
+width: 30%
+}.links  div  a{
+  text-decoration: none;
+}
+.links  div   h4{
+  font-size: 20px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  text-decoration: none;
+}
+.links  div h4:hover{
+color: #7c7878;
+
+}
+.underline{
+ display: block;
+ text-decoration: none;
+ font-size: small;
+ margin: 20px 0;
+ position: relative;
+
+}
+.underline::after {
+  content: "";
+  position: absolute;
+  bottom:-6px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(10, 10, 11); 
+  transition: width 0.3s; 
+}
+.underline:hover::after {
+  width: 50%; 
+}
+/* .links div a::after {
+  content: "";
+  position: absolute;
+  bottom:-6px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(10, 10, 11); 
+  transition: width 0.3s; 
+}
+.links div a:hover::after {
+  width: 50%; 
+}
+.links div a::after {
+  content: "";
+  position: absolute;
+  bottom:-6px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: rgb(10, 10, 11); 
+  transition: width 0.3s;
+}
+.links div a:hover::after {
+  width: 50%;
+} */
+
+  
+
+
+footer{
+  background-color:  rgb(82, 78, 78);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 10vh;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+}
